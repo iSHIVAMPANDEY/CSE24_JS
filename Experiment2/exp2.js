@@ -67,7 +67,7 @@ function averageSalary() {
 
 function countDepartment() {
     let deptName = prompt("Enter department name:");
-    let count = employees.filter(emp => emp.dept === deptName).length;
+    let count = employees.filter(emp => emp.department === deptName).length;
     document.getElementById("output").innerHTML = 
     "<h3>Employees in " + deptName + ": " + count + "</h3>";
 }
